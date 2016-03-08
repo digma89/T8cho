@@ -11,13 +11,45 @@
     margin-left: -10px;
     margin-right: -10px;
   }
+  
+    .rowhome1{
+      width:40%; 
+      margin:auto;
+      padding:3% 7% 1% 7%;
+  }  
 
+
+  .rowhome{
+      display: table;
+      padding:3% 7% 1% 7%;
+  }
+  
+    .columnhome{
+      display: table-cell;
+      padding:25px 25px 60px 25px;
+  }
   
 
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+  
+    .rowhome1{
+      width:40%; 
+      margin:auto;
+      padding:3% 7% 1% 7%;
+  }  
+    
+      .rowhome{
+      display: table;
+      padding:3% 7% 1% 7%;
+  }
+  
+    .columnhome{
+      display: table-cell;
+      padding:25px 25px 60px 25px;
+  }
   
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
@@ -100,6 +132,23 @@
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+    
+   .rowhome1{
+      width:40%; 
+      margin:auto;
+      padding:3% 7% 1% 7%;
+  }  
+    
+      .rowhome{
+      display: table;
+      padding:3% 7% 1% 7%;
+  }
+  
+    .columnhome{
+      display: table-cell;
+      padding:25px 25px 60px 25px;
+  }
+    
   /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
       display: block;
@@ -187,6 +236,21 @@
 
 /* xs */
 @media (max-width: 767px) {
+    
+    .rowhome1{
+      display: table;
+      padding:5% 7% 5% 7%;
+  }  
+
+    .rowhome{
+      display: table;
+      padding:3% 7% 5% 7%;
+  }
+  
+    .columnhome{      
+      padding:7px 25px 60px 25px;
+  }  
+    
   .container > .navbar-header, .container > .navbar-collapse{
     margin-left: 0;
   }
