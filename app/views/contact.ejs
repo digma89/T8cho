@@ -1,0 +1,63 @@
+
+    
+<% include partials/header.ejs%>
+
+    <!-- Content Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">                   
+                    
+                <h1 class="section-heading">Hey, let me know what you think</h1>
+                    
+                    <!--Contact form by http://bootsnipp.com/jasonflaherty -->
+                    <div class="container">
+                    <div class="row">
+                    <!--after sent form go to confirmation page and send info with the post method -->
+                    <form role="form" action="/confirmation" method="post" >
+                        <div class="col-lg-6">
+                         <div class="form-group">
+                            <!--Input user name -->
+                            <label for="InputName">Your Name</label>
+                            <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="name" placeholder="Enter Name" required>
+                            <span class="input-group-addon"><i class="glyphicon form-control-feedback"></i></span></div>
+                        </div>
+                        <div class="form-group">
+                            <!--Input user email -->
+                            <label for="InputEmail">Your Email</label>
+                            <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                            <span class="input-group-addon"><i class="glyphicon  form-control-feedback"></i></span></div>
+                        </div>
+                        <div class="form-group">
+                            <!--Input user message -->
+                            <label for="InputMessage">Message</label>
+                            <div class="input-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><i class="glyphicon  form-control-feedback"></i></span></div>
+                        </div>
+                        <div class="form-group">
+                            <!--Input captcha -->
+                            <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                            <div class="input-group">
+                            <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                            <span class="input-group-addon"><i class="glyphicon  form-control-feedback"></i></span></div>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                        </div>
+                    </form>                    
+                    <div class="col-lg-5 col-md-push-1">
+                    </div>
+                    </div>
+                    </div>          
+                
+                
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+<% include partials/footer.ejs%>
