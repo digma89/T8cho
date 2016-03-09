@@ -265,7 +265,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: ghostwhite;  /*Header background color  ghost white*/
+  background: #fff;  /*Header background color  ghost white*/
   padding: 15px 0;
   padding-bottom: 0;
 }
