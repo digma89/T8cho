@@ -1,13 +1,11 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="T8cho">
+    <meta name="author" content="DR">
     <title>
         <%=title %>
     </title>
@@ -16,13 +14,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -32,45 +25,43 @@
 <!--/head-->
 
 <body>
+    <div id="wrapper">
 
-    <header id="header" >
-
-
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a style="padding:0 0 20px 0" class="navbar-brand" href="/"><img src="images/logo.png " alt="logo"></a>
-                </div>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li<%if(title=="Home" ){ %> class="
-                            <%= pactive%>"
-                                <%}%> > <a href="/">Home</a></li>
-                        <li<%if(title=="Proyectos" ){ %> class="
-                            <%= pactive%>"
-                                <%}%>><a href="/proyectos">Proyectos</a></li>
-                        <li<%if(title=="Contacto" ){ %> class="
-                            <%= pactive%>"
-                                <%}%>><a href="/contacto">Contacto</a></li>
-                    </ul>
-                    <div style=" float:right; margin-left: 150px;">
-                        <ul class="social-share">
-                            <li><a href="https://www.facebook.com/t8cho"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/t8cho"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/t8cho/"><i class="fa fa-instagram"></i></a></li>
+        <header id="header">
+            <nav class="navbar navbar-inverse" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a style="padding:0 0 20px 0" class="navbar-brand" href="/"><img src="images/logo.png " alt="logo"></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li<%if(title=="Home" ){ %> class="
+                                <%= pactive%>"
+                                    <%}%> > <a href="/">Home</a></li>
+                                        <li<%if(title=="Proyectos" ){ %> class="
+                                            <%= pactive%>"
+                                                <%}%>><a href="/proyectos">Proyectos</a></li>
+                                                    <li<%if(title=="Contacto" ){ %> class="
+                                                        <%= pactive%>"
+                                                            <%}%>><a href="/contacto">Contacto</a></li>
                         </ul>
+                        <div style=" float:right; margin-left: 150px;">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/t8cho"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/t8cho"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/t8cho/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-    </header>
-    <!--/header-->
+                <!--/.container-->
+            </nav>
+            <!--/nav-->
+        </header>
+        <!--/header-->

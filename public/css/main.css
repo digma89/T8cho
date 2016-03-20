@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+#wrapper {
+ min-height:100%;
+   position:relative;
+}
 
 
 /*************************
@@ -11,7 +14,10 @@ body {
   Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; 
   font-weight: 100;
   color:#404041;
-  line-height: 22px;       
+  line-height: 22px;  
+   margin:0;
+   padding:0;
+   height:100%;
 
 }
 
@@ -1534,6 +1540,7 @@ ul.social_icons li  a i{
   border-top: 5px solid #666;
   height: 84px;
   margin-top: 110px;
+
 }
 
 .footer_left {
@@ -1806,10 +1813,12 @@ shortcodes page css
 }
 
 #footer {
+  
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
   background: #2e2e2e;
+  margin-top: 70px
 }
 
 #footer a {
