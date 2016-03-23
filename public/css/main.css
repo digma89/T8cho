@@ -1010,11 +1010,11 @@ a.accordion-toggle  i{
 }
 
 #carousel-slider .carousel-indicators li {
-  border: 1px solid #ffbd20;
+  border: 2px solid #666;
 }
 
 #carousel-slider a i {
-  border: 1px solid #777;
+  border: 2px solid #777;
   border-radius:50%;
   font-size: 28px;
   height: 50px;

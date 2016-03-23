@@ -10,8 +10,9 @@ exports.read = function(req, res) {
 
 exports.projectByID = function(req, res, next, id) {
     res.render('slider',{
-        title: id,
-        pactive: "active"
+        title: "Proyectos",
+        pactive: "active",
+        id: id
     }) 
     
 };

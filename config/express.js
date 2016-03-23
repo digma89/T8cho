@@ -26,8 +26,7 @@ module.exports = function(){
     app.set('view engine', 'ejs');
     
     //add the routes that my application use
-    require('../app/routes/index.server.routes.js')(app);
-    require('../app/routes/projects.server.routes.js')(app);   
+    require('../app/routes/index.server.routes.js')(app); 
     require('../app/routes/contact.server.routes.js')(app);
     require('../app/routes/confirmation.server.routes.js')(app);
     require('../app/routes/slider.server.routes.js')(app);

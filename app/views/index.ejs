@@ -1,68 +1,60 @@
-<% include partials/header.ejs%>
+<!DOCTYPE html>
+<html lang="en">
 
-    <content >
-        <section id="main-slider" class="no-margin" >
-            <div class="carousel slide" style="margin-top:5px;">
-                <div class="carousel-inner" data-ride="carousel" data-interval="5000" data-pause="false">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T8cho">
+    <meta name="author" content="DR">
+    <title>T8cho</title>
 
-                    <div class="item active" style="background-image: url(images/slider/slide1.png)"></div>
-                    <div class="item" style="background-image: url(images/slider/slide2.png)"></div>
-                    <div class="item" style="background-image: url(images/slider/slide3.png)"></div>
-                    <div class="item" style="background-image: url(images/slider/slide4.png)"></div>
-                    <div class="item" style="background-image: url(images/slider/slide5.png)"></div>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
 
-                </div>
-                <!--/.carousel-inner-->
-            </div>
-            <!--/.carousel-->
+<body>
+    <div id="wrapper">
 
-            <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-                <i class="fa fa-chevron-left"></i>
-            </a>
-            <a class="next hidden-xs" href="#main-slider" data-slide="next">
-                <i class="fa fa-chevron-right"></i>
-            </a>
-        </section>
-        <!--/#main-slider-->
+        <div ng-include="'example/views/templates/header.client.view.html'"> </div>
 
-        <!--Body-->
-        <div style="background:white; color#666; width:100%; padding-bottom: 150px;">
+        <section ng-view></section>
 
-            <div class="rowhome1 textHome wow fadeInDown">
-                <p style="text-align: center; "> <img src="images/logo2.png" /></p>
-                <div class="dividerHome  wow fadeInDown"></div>
-                <p style="line-height: 1.5em;">Somos un taller de arquitectura y diseño, donde transformamos ideas en productos arquitectónicos tangibles,
-                    desarrollados bajo un proceso detallado de estuido.</p>
-            </div>
+        <script type="text/javascript">
+            window.project = <%- title || 'null' %>;
+        </script>
 
-            <div>
-                <div class="rowhome textHome wow fadeInDown">
-                    <div class="columnhome">
-                        <p style="text-align: center ">Construcción</p>
-                        <div class="dividerHome  wow fadeInDown"></div>
-                        <p style="line-height: 1.5em ">Somos un equipo multidisciplinario, capaz de ofrecerle al cliente la opción de vivir el proyecto.
-                            Contamos con un equipo de profesionales especializados en la construcción, supervisión, y coordinación
-                            de la obra.</p>
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="/application.js"></script>
 
-                    </div>
+        <script type="text/javascript" src="/example/example.client.module.js"></script>
+        <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
+        <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
 
-                    <div class="columnhome wow fadeInDown">
-                        <p style="text-align: center ">Diseño</p>
-                        <div class="dividerHome  wow fadeInDown"></div>
-                        <p style="line-height: 1.5em ">El diseño es de suma importancia en todos nuestros proyectos, sobre todo el arquitectónico, sin embargo
-                            nos gusta involucrarnos por completo en los proyectos diseñando el mobiliario y los accesorios
-                            necesarios para lograr los resultados que buscamos.</p>
-                    </div>
 
-                    <div class="columnhome wow fadeInDown">
-                        <p style="text-align: center "> Arquitectura</p>
-                        <div class="dividerHome  wow fadeInDown"></div>
-                        <p style="line-height: 1.5em ">Se evalúan las necesidades de los clientes para lograr propuestas funcionales e innovadoras capaces
-                            de trascender. Buscando siempre la sencillez y la claridad del proyecto.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </content>
+        <script type="text/javascript" src="/projects/projects.client.module.js"></script>
+        <script type="text/javascript" src="/projects/services/id.client.service.js"></script>
 
-    <% include partials/footer.ejs%>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
+
+
+        <div ng-include="'example/views/templates/footer.client.view.html'"> </div>
+
+    </div>
+    <!--/#Wrapper-->
+</body>
+
+</html>
