@@ -1,5 +1,11 @@
 /* lg */ 
 @media (min-width: 1200px) {
+    
+ #projects{
+    width: 45%;
+    margin: auto;
+    height: 1000px;
+}
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
       display: block;
@@ -34,7 +40,13 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+    
+ #projects{
+    width: 50%;
+    margin: auto;
+    height: 1000px;
+}
+
     .rowhome1{
       width:40%; 
       margin:auto;
@@ -132,6 +144,12 @@
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+    
+    #projects{
+    width: 70%;
+    margin: auto;
+    height: 1000px;
+}
     
    .rowhome1{
       width:40%; 
@@ -237,9 +255,15 @@
 /* xs */
 @media (max-width: 767px) {
     
+ #projects{
+    width: 70%;
+    margin: auto;
+    height: 1000px;
+}
+    
     .rowhome1{
       display: table;
-      padding:5% 11% 5% 11%;
+      padding:5% 11% 7% 11%;
   }  
 
     .rowhome{
@@ -364,7 +388,7 @@
     
     .rowhome1{
       display: table;
-      padding:5% 13% 5% 13%;
+      padding:5% 13% 15% 13%;
   }  
 
     .rowhome{
