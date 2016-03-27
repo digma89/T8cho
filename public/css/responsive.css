@@ -1,6 +1,11 @@
 /* lg */ 
 @media (min-width: 1200px) {
     
+#contact{
+   width:40%;
+   margin:auto; 
+}
+    
  #projects{
     width: 45%;
     margin: auto;
@@ -40,6 +45,11 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+    
+ #contact{
+   width:50%;
+   margin:auto; 
+}
     
  #projects{
     width: 50%;
@@ -144,6 +154,12 @@
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+    
+#contact{
+   
+   width:60%;
+   margin:auto; 
+}
     
     #projects{
     width: 70%;
@@ -254,6 +270,11 @@
 
 /* xs */
 @media (max-width: 767px) {
+    
+     #contact{
+   width:80%;
+   margin:auto; 
+}
     
  #projects{
     width: 90%;
@@ -386,6 +407,10 @@
 
 /* XS Portrait */
 @media (max-width: 480px) {
+ #contact{
+   width:100%;
+   margin:auto; 
+}
     
     .rowhome1{
       display: table;
