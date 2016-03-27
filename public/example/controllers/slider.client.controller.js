@@ -10,14 +10,21 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         $scope.active = 0;
         var slides = $scope.slides = [];
         var currIndex = 0;
-
+        
         if (projectId == 1001) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"CAIS Cuauhtemoc",
+                    cliente:"Gobierno + Privado",
+                    ubicacion: "Colonia Guerrero México D.F.",
+                    area: "16,806 m\u00b2",
+                    tipo: "Equipamiento + Habitacional + Deportivo",
+                    estatus: "Proyecto en concurso - En exposicion Bienal de Arquitectura de Venecia 2014."};
+    
                 slides.push({
                     image: 'images/slider/Proyecto1/1-1.jpg',
                     id: currIndex++
-                },
+                    },
                     {
                         image: 'images/slider/Proyecto1/1-2.jpg',
                         id: currIndex++
@@ -56,6 +63,13 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         } else if (projectId == 1002) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                 $scope.info = {proyecto:"Baño SR",
+                    cliente:"Privado",
+                    ubicacion: "Colonia San Rafael, México D.F.",
+                    area: "30.00 m\u00b2",
+                    tipo: "Comercial",
+                    estatus: "Proyecto."};
+    
                 slides.push({
                     image: 'images/slider/Proyecto2/2-1.jpg',
                     id: currIndex++
@@ -85,6 +99,13 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         } else if (projectId == 1003) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"Torre Guerrero",
+                    cliente:"Privado",
+                    ubicacion: "Colonia Guerrero, México D.F.",
+                    area: "13,975 m\u00b2",
+                    tipo: "Habitacional + Comercial + Cultural",
+                    estatus: "Proyecto en concurso - En exposicion Bienal de Arquitectura de Venecia 2014."};
+    
                 slides.push({
                     image: 'images/slider/Proyecto3/3-1.jpg',
                     id: currIndex++
@@ -118,6 +139,13 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         } else if (projectId == 1004) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:'Restaurante "Condimento" Marriott ',
+                    cliente:"Marriott Reforma",
+                    ubicacion: "Paseo de la Reforma #276, México D.F.",
+                    area: "315.00 m\u00b2",
+                    tipo: "Comercial",
+                    estatus: "Proyecto entregado."};
+    
                 slides.push({
                     image: 'images/slider/Proyecto4/4-1.jpg',
                     id: currIndex++
@@ -135,6 +163,13 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         } else if (projectId == 1005) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"Clínica dental Blu",
+                    cliente:"Privado",
+                    ubicacion: "Colonia Piedad Narvarte, México D.F.",
+                    area: "100.00 m\u00b2",
+                    tipo: "Comercial",
+                    estatus: "Construido."};
+                    
                 slides.push({
                     image: 'images/slider/Proyecto5/5-1.jpg',
                     id: currIndex++
@@ -173,6 +208,12 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         } else if (projectId == 1006) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"Globo Studios",
+                    cliente:"Privado",
+                    ubicacion: "San Jerónimo, México D.F.",
+                    area: "180.00 m\u00b2",
+                    tipo: "Diseño de interiores",
+                    estatus: "Construido."};
                 slides.push({
                     image: 'images/slider/Proyecto6/6-1.jpg',
                     id: currIndex++
@@ -198,6 +239,12 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         }else if (projectId == 1007) {
             $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"Terraza Senado",
+                    cliente:"Público",
+                    ubicacion: "Cámara de senadores, México D.F.",
+                    area: "300.00 m\u00b2",
+                    tipo: "Mobiliario urbano",
+                    estatus: "Concurso."};
                 slides.push({
                     image: 'images/slider/Proyecto7/7-1.jpg',
                     id: currIndex++
@@ -223,6 +270,13 @@ angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$
         }else if (projectId == 1008){
         $scope.addSlide = function() {
                 var newWidth = 600 + slides.length + 1;
+                $scope.info = {proyecto:"Oficinas MMM",
+                    cliente:"Privado",
+                    ubicacion: "La Mora, Hidalgo",
+                    area: "105.00 m\u00b2",
+                    tipo: "Oficinas",
+                    estatus: "Proyecto entregado."};
+                    
                 slides.push({
                     image: 'images/slider/Proyecto8/8-1.jpg',
                     id: currIndex++

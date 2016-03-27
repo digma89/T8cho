@@ -4,7 +4,7 @@
  #projects{
     width: 45%;
     margin: auto;
-    height: 1000px;
+    height: 800px;
 }
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
@@ -44,8 +44,8 @@
  #projects{
     width: 50%;
     margin: auto;
-    height: 1000px;
-}
+    height: 800px;
+ }
 
     .rowhome1{
       width:40%; 
@@ -148,7 +148,7 @@
     #projects{
     width: 70%;
     margin: auto;
-    height: 1000px;
+    height: 800px;
 }
     
    .rowhome1{
@@ -258,7 +258,8 @@
  #projects{
     width: 90%;
     margin: auto;
-    height: 1000px;
+    height: 700px;
+    
 }
     
     .rowhome1{

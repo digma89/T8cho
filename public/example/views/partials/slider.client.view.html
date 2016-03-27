@@ -1,7 +1,7 @@
 <section id="projects">
     <!-- projects slider -->
     <div>
-        <div style="margin-top:90px;">            
+        <div style="margin-top:90px; margin-bottom:40px">            
             <div>
                 <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
@@ -11,6 +11,14 @@
             </div>            
         </div>
        <!--/#projects-slider-->
-       
+       <div style="	text-align: justify; width: 80%; margin:auto;">
+           <h4>{{info.proyecto}}</h4>
+           <p><b>Cliente: </b>{{info.cliente}} /
+           <b>Ubicación: </b>{{info.ubicacion}} /
+           <b>Área: </b>{{info.area}} /
+           <b>Tipo: </b>{{info.tipo}} /
+           <b>Estatus: </b>{{info.estatus}} 
+             </p>
+       </div>
        
 </section>
