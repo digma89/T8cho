@@ -15,6 +15,10 @@ angular.module('example').config(['$routeProvider',
                 templateUrl: '/example/views/partials/slider.client.view.html',         
                 activetab: '2', 
                 controller: 'sliderCtrl'      
+            }).when('/contact', {
+                templateUrl: '/example/views/partials/contact.client.view.html',          
+                activetab: '3', 
+                controller: 'contactController'     
             }).
             otherwise({
                 redirecTo: '/'
