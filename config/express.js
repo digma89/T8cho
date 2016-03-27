@@ -28,7 +28,6 @@ module.exports = function() {
     require('../app/routes/index.server.routes.js')(app);
     require('../app/routes/contact.server.routes.js')(app);
     require('../app/routes/confirmation.server.routes.js')(app);
-    require('../app/routes/slider.server.routes.js')(app);
 
     app.use(express.static('public'));
     //app.use(express.static('./public'));

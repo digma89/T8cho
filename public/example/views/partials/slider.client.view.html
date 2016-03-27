@@ -1,0 +1,16 @@
+<section id="projects">
+    <!-- projects slider -->
+    <div>
+        <div style="margin-top:70px;">            
+            <div>
+                <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <img ng-src="{{slide.image}}" class="img-carousel-b">
+                    </uib-slide>
+                </uib-carousel>
+            </div>            
+        </div>
+       <!--/#projects-slider-->
+       
+       
+</section>

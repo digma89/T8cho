@@ -11,8 +11,15 @@ angular.module('example').config(['$routeProvider',
                 templateUrl: '/example/views/partials/projects.client.view.html',         
                 activetab: '2'       
             }).
+            when('/projects/:projectId', {
+                templateUrl: '/example/views/partials/slider.client.view.html',         
+                activetab: '2', 
+                controller: 'sliderCtrl'      
+            }).
             otherwise({
                 redirecTo: '/'
             });
     }
 ]);
+
+slider.client.view.html
