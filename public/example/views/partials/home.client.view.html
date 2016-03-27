@@ -1,28 +1,15 @@
-
+ 
 
 <content>
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide" style="margin-top:5px;">
-            <div class="carousel-inner" data-ride="carousel" data-interval="5000" data-pause="false">
-
-                <div class="item active" style="background-image: url(images/slider/slide1.png)"></div>
-                <div class="item" style="background-image: url(images/slider/slide2.png)"></div>
-                <div class="item" style="background-image: url(images/slider/slide3.png)"></div>
-                <div class="item" style="background-image: url(images/slider/slide4.png)"></div>
-                <div class="item" style="background-image: url(images/slider/slide5.png)"></div>
-
-            </div>
-            <!--/.carousel-inner-->
-        </div>
-        <!--/.carousel-->
-
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            <i class="fa fa-chevron-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
-        </a>
-    </section>
+    
+<div ng-controller="CarouselDemoCtrl" style="margin-top:50px;">
+  <div>
+    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" class="img-carousel-a">  
+      </uib-slide>
+    </uib-carousel>
+</div>   
     <!--/#main-slider-->
 
     <!--Body-->
@@ -63,7 +50,3 @@
         </div>
     </div>
 </content>
-
-
-
-

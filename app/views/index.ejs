@@ -9,6 +9,7 @@
     <title>T8cho</title>
 
     <!-- core CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" >
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
 </head>
 <!--/head-->
 
@@ -33,7 +35,10 @@
             window.project = <%- title || 'null' %>;
         </script>
 
+
         <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script type="text/javascript" src="/lib/angular-animate/angular-animate.js"></script>
         <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="/application.js"></script>
 
@@ -41,6 +46,7 @@
         <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
         <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
 
+	    
 
         <script type="text/javascript" src="/projects/projects.client.module.js"></script>
         <script type="text/javascript" src="/projects/services/id.client.service.js"></script>
@@ -49,7 +55,6 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/wow.min.js"></script>
-
 
         <div ng-include="'example/views/templates/footer.client.view.html'"> </div>
 
