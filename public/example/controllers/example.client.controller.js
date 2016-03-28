@@ -3,7 +3,7 @@ angular.module('example').controller('ExampleController', ['$scope', '$location'
         $scope.isActive = function(route) {
             return route === $location.path();
         };
-
+ $scope.name = 'Superhero';
     },
 ]);
 
