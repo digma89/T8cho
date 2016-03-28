@@ -750,6 +750,15 @@ a.accordion-toggle  i{
     max-height:450px;
 }
 
+/*************************
+********* Contact CSS ******
+**************************/
+
+.btn1:hover{
+    background-color: #4E4E4E; 
+    color: #fff;
+    
+}
 
 
 /******************
