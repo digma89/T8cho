@@ -19,13 +19,26 @@ html{
 #animation { width:100%; height:100%; background-color:#000;   position: absolute;
     z-index: 10;}
     
+    #animation1 { width:100%; height:0; opacity: 0;  background-color: #000;  position: fixed;
+    z-index: 10;
+  }
+      #animation2 { width:0%; height:100%; opacity: 0;  background-color: #000;  position: fixed; right: 0;
+    z-index: 10;
+  }
+        #animation3 { width:100%; height:0%; opacity: 0;  background-color: #000;  position: fixed; bottom: 0;
+    z-index: 10;
+  }
+   #animation4 { width:0; height:100%; opacity: 0;  background-color: #000;  position: fixed; 
+    z-index: 10;
+  }
+    
     #enlarge {
+  position:fixed;
   background: #fff;
-  height: 0;
-  width: 2px;
+  height: 2px;
+  width: 0;
   z-index: 10;
-  position:absolute;
-  bottom:50%;
+  top: 50%;
 }
 
 
