@@ -1,0 +1,67 @@
+<!DOCTYPE html >
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T8cho">
+    <meta name="author" content="DR">
+    <title>T8cho</title>
+
+    <!-- core CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" > 
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">     
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+<!--/head-->
+ 
+<body>
+
+    <div id="wrapper">       
+
+ <div ng-include="'example/views/templates/header.client.view.html'"> </div>
+      
+
+        <section ng-view></section>
+
+        <script type="text/javascript">
+            window.project = <%- title || 'null' %>;
+        </script>
+
+
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script type="text/javascript" src="/lib/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="/application.js"></script>
+
+        <script type="text/javascript" src="/example/example.client.module.js"></script>
+        <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
+        <script type="text/javascript" src="/example/controllers/slider.client.controller.js"></script>
+        <script type="text/javascript" src="/example/controllers/contact.client.controller.js"></script>
+        <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
+
+	    
+
+        <script type="text/javascript" src="/projects/projects.client.module.js"></script>
+        <script type="text/javascript" src="/projects/services/id.client.service.js"></script>
+
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <div ng-include="'example/views/templates/footer.client.view.html'"> </div>
+
+    </div>
+    <!--/#Wrapper-->
+</body>
+
+</html>

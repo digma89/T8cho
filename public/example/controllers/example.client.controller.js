@@ -7,7 +7,6 @@ angular.module('example').controller('ExampleController', ['$scope', '$location'
     },
 ]);
 
-
 angular.module('example').controller('CarouselDemoCtrl', function($scope) {
     $scope.myInterval = 4000;
     $scope.noWrapSlides = true;

@@ -7,6 +7,9 @@ module.exports = function(app){
     
     var contact = require('../controllers/contact.server.controller');
     app.post('/contacto',contact.sendMail);
+    
+    var home = require('../controllers/home.server.controller');
+    app.get('/home', home.render);
  
 };
 

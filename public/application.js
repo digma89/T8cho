@@ -13,6 +13,7 @@ mainApplicationModule.config(['$routeProvider', '$compileProvider', function($ro
     $compileProvider.debugInfoEnabled(false);
 }]);
 
+
 angular.element(document).ready(function() {
     angular.bootstrap(document, [mainApplicationModuleName]);
 });

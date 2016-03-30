@@ -5,7 +5,7 @@ angular.module('example').config(['$routeProvider',
         $routeProvider.
             when('/', {
                 templateUrl: '/example/views/partials/home.client.view.html',
-                activetab: '1'     
+                activetab: '1'                 
             }).
             when('/projects', {
                 templateUrl: '/example/views/partials/projects.client.view.html',         

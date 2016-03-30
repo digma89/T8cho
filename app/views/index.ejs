@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -9,57 +9,62 @@
     <title>T8cho</title>
 
     <!-- core CSS -->
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" > 
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">     
+    <link href="css/responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script>setTimeout(function(){window.location.href='/home'},3000);</script> 
+
 
 </head>
-<!--/head-->
+
 
 <body>
+
+</div>
     <div id="wrapper">
+        <div style="width:100%; padding:5% 2% 0 2%;">
+            <img style=" display:block;   margin:auto;" class="img-responsive" src="/images/logoMain.gif">
+        </div>
 
-        <div ng-include="'example/views/templates/header.client.view.html'"> </div>
+        <div style="width:100%; text-align:center">
+            <p> <a href="/home">[intro]</a><p>
 
-        <section ng-view></section>
-
-        <script type="text/javascript">
-            window.project = <%- title || 'null' %>;
-        </script>
+        </div>
 
 
-        <script type="text/javascript" src="/lib/angular/angular.js"></script>
-        <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script type="text/javascript" src="/lib/angular-animate/angular-animate.js"></script>
-        <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
-        <script type="text/javascript" src="/application.js"></script>
-
-        <script type="text/javascript" src="/example/example.client.module.js"></script>
-        <script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
-        <script type="text/javascript" src="/example/controllers/slider.client.controller.js"></script>
-        <script type="text/javascript" src="/example/controllers/contact.client.controller.js"></script>
-        <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
-
-	    
-
-        <script type="text/javascript" src="/projects/projects.client.module.js"></script>
-        <script type="text/javascript" src="/projects/services/id.client.service.js"></script>
-
-        
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
 
-        <div ng-include="'example/views/templates/footer.client.view.html'"> </div>
+        <footer id="footer" class="midnight-blue">
+            <!-- Footer -->
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; Taller 8cho. All rights reserved.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a href="/home#!/">Home</a></li>
+                            <li><a href="/home#!/projects">Proyectos</a></li>
+                            <li><a href="/home#!/contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+     
     </div>
     <!--/#Wrapper-->
+  
+ 
 </body>
 
 </html>

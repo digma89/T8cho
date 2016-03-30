@@ -1,7 +1,7 @@
-angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams', '$location',
+angular.module('example').controller('sliderCtrl', ['$scope', '$routeParams','$location',
     function($scope, $routeParams, $location) {
-        var projectId = $routeParams.projectId;
-        $scope.isActive = function(route) {
+       var projectId = $routeParams.projectId;
+       $scope.isActive = function(route) {
             return route === $location.path();
         };
 
