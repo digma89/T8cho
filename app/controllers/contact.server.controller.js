@@ -14,7 +14,7 @@ exports.sendMail = function(req, res) {
 
 var mailOptions = {
         from: data.inputName,
-        to: 'digma89@hotmail.com',
+        to: 'contacto@taller8cho.com',
         subject: 'Message from ' + data.inputName +' Subject: ' +data.inputSubject,
         text:'Message from ' + data.inputName +'\n Subject: ' +data.inputSubject + '\n Email: ' +data.inputEmail +'\n Message: ' +data.inputMessage
     };
