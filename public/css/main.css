@@ -18,20 +18,7 @@ html{
 
 #animation { width:100%; height:100%; background-color:#000;   position: absolute;
     z-index: 10;}
-    
-    #animation1 { width:100%; height:0; opacity: 0;  background-color: #000;  position: fixed;
-    z-index: 10;
-  }
-      #animation2 { width:0%; height:100%; opacity: 0;  background-color: #000;  position: fixed; right: 0;
-    z-index: 10;
-  }
-        #animation3 { width:100%; height:0%; opacity: 0;  background-color: #000;  position: fixed; bottom: 0;
-    z-index: 10;
-  }
-   #animation4 { width:0; height:100%; opacity: 0;  background-color: #000;  position: fixed; 
-    z-index: 10;
-  }
-    
+
     #enlarge {
   position:fixed;
   background: #fff;
@@ -759,43 +746,6 @@ a.accordion-toggle  i{
     background-color: #4E4E4E; 
     color: #fff;
     
-}
-
-
-/******************
- 404 page css
- ******************/
-
-#error .btn-success:hover, 
-.btn-success:focus, 
-.btn-success:active, 
-.btn-success.active, 
-.open .dropdown-toggle.btn-success:hover {
-  background-color: #EBEBEB;
-  border-color: #EBEBEB;
-  color: #4E4E4E;
-}
-
-#error h1{
-  color: #4e4e4e;
-  text-transform: uppercase;
-}
-
-
-/******************
-shortcodes page css
-******************/
-
-.shortcode-item {
-  padding-bottom: 0;
-}
-
-.shortcode-item h2 {
-  color: #4E4E4E;
-  font-size: 24px;
-  margin-bottom: 22px;
-  margin-top: 0;
-  font-weight: 600
 }
 
 
