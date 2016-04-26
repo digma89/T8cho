@@ -1,7 +1,14 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('../fonts/districtthin.ttf');
+  font-family: 'HUltraLight';
+  src: url('../fonts/HUltraLight.otf');
 }
+
+@font-face {
+  font-family: 'HLight';
+  src: url('../fonts/HLight.ttf');
+}
+
+
 
 #nav ul { text-align: center; } 
 
@@ -9,6 +16,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
 }
 
 #wrapper {
@@ -35,7 +43,7 @@ html{
 
 body {
   background: #fff;
-  font-family: MyWebFont, HelveticaNeue-Light, Helvetica Neue Light,
+  font-family: HUltraLight, HLight, HelveticaNeue-Light, Helvetica Neue Light,
   Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; 
   font-weight: 100;
   color:#404041;
@@ -54,7 +62,7 @@ h4,
 h5,
 h6 {
   font-weight: 600; 
-  font-family:MyWebFont,HelveticaNeue-Light, Helvetica Neue Light,
+  font-family:HUltraLight,HelveticaNeue-Light, Helvetica Neue Light,
   Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; 
   color:#404041;
 }
@@ -62,13 +70,20 @@ h6 {
     color:#000;
     font-weight: 
     600;
-    font-family:arial;
+    font-family:HUltraLight;
+   
+}
+.proyectosFont1{
+    color:#000;
+    font-weight: 
+    600;
+    font-family:HLight;
    
 }
 
 
 p{
-     font-family: MyWebFont   
+     font-family: HUltraLight   
 }
 
 h1{
@@ -393,340 +408,26 @@ ul.social-share li a:hover {  /*Social hover */
     font-weight: 100;
 }
 
-
-
-#feature {
-  background: #f2f2f2;
-  padding-bottom: 40px;
+.homeSliderMarginstyle{
+  margin-top:100px;
 }
 
-.features{
-  padding: 0;
+.homeBodyStyle{
+  background:white; 
+  color:#666;
+   width:80%; 
+   margin:auto; 
+   padding:50px 0 150px 0; 
+   
 }
 
-#recent-works .col-xs-12.col-sm-4.col-md-3{
-  padding: 0;
-}
-
-#recent-works{
-    padding-bottom: 70px;
-    margin-top:50px;
-}
-
-.recent-work-wrap {
-  position: relative;
-}
-
-.recent-work-wrap img{
-  width: 100%;
-}
-
-.recent-work-wrap .recent-work-inner{
-  top: 0;
-  background: transparent;
-  opacity: .8;
-  width: 100%;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.recent-work-wrap .recent-work-inner h3{
-  margin: 10px 0;
-}
-
-.recent-work-wrap .recent-work-inner h3 a{
-  font-size: 24px;
-  color: #fff;
-}
-
-.recent-work-wrap .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  border-radius: 0;
-  background: #404041;
-  color: #fff;
-  vertical-align: middle;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;  
-  padding: 30px;
-}
-
-.recent-work-wrap .overlay .preview {
-  bottom: 0;
-  display: inline-block;
-  height: 35px;
-  line-height: 35px;
-  border-radius: 0;
-  background: transparent;
-  text-align: center;
-  color: #fff;
-}
-
-.recent-work-wrap:hover .overlay {
-  opacity: 1;
-}
-
-#services {
-  background: #000 url(../images/services/bg_services.png);
-  background-size: cover;
-}
-
-#services .lead,
-#services h2{
-  color: #fff;
-}
-
-.services-wrap {
-  padding: 40px 30px;
-  background: #fff;
-  border-radius: 4px;
-  margin: 0 0 40px;
-}
-
-.services-wrap h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.services-wrap .pull-left {
-  margin-right: 20px;
-}
-
-#middle {
-  background: #f2f2f2;
-}
-
-.skill h2{
-  margin-bottom: 25px;
-}
-
-.accordion h2{
-  margin-bottom: 25px;
-}
-
-.panel-default{
-  border-color: transparent;
-}
-
-.panel-default>.panel-heading,
-.panel{
-  background-color: #e6e6e6; 
-  border:0 none;
-  box-shadow:none;
-}
-
-.panel-default>.panel-heading+.panel-collapse .panel-body{
-  background: #fff;
-  color: #858586;
-}
-
-.panel-body{
-  padding: 20px 20px 10px;
-}
-
-.panel-group .panel+.panel{
-  margin-top: 0;
-  border-top: 1px solid #d9d9d9;
-}
-
-.panel-group .panel{
-  border-radius: 0;
-}
-
-.panel-heading{
-  border-radius: 0;
-}
-
-.panel-title>a{
-  color: #4e4e4e;
-}
-
-.accordion-inner img{
-  border-radius: 4px;
-}
-
-.accordion-inner h4{
-  margin-top: 0;
-}
-
-.panel-heading.active{
-  background: #1f1f20;
-}
-
-.panel-heading.active .panel-title>a{
-  color:#fff;
-}
-
-a.accordion-toggle  i{
-  width: 45px;
-  line-height: 44px;
-  font-size: 20px;
-  margin-top: -10px;
-  text-align: center;
-  margin-right: -15px;
-  background: #c9c9c9;
-}
-
-.nav-tabs>li{
-  margin-bottom: 0px;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.nav-tabs{
-  border-bottom: transparent;
-  border-right: 1px solid #e6e6e6;
-}
-
-.nav-tabs>li>a {
-  background: #f5f5f5;
-  color: #666;
-  border-radius: 0;
-  border: 0 none;
-  line-height: 24px;
-  margin-right:0;
-  padding: 13px 15px;
-}
-
-.nav-tabs li:last-child{
-  border-bottom: 0 none;
-} 
-
-.nav-stacked>li+li{
-  margin-top: 0;
-}
-
-.nav-tabs>li>a:hover{
-  background: #1f1f20;
-  color:#fff;
-}
-
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:hover, 
-.nav-tabs>li.active>a:focus {
-  border: 0;
-  color:#fff;
-  background: #1f1f20;
-  position: relative;
-}
-
-.nav-tabs>li.active>a:after {
-  position: absolute;
-  content:  "";
-  width: auto;
-  height: auto;
-  border-style:solid;
-  border-color: transparent transparent transparent #1f1f20;
-  border-width: 25px 22px;
-  right: -44px;
-  top:0;
-}
-
-.tab-wrap{
-  border:1px solid #e6e6e6;
-  margin-bottom: 20px;
-}
-
-.tab-content{
-  padding: 20px;
-}
-
-.tab-content h2{
-  margin-top: 0;
-}
-
-.tab-content img{
-  border-radius: 4px;
-}
-
-.testimonial h2{
-  margin-top: 0;
-}
-
-.testimonial-inner {
-  color:#858586;
-  font-size: 14px;
-}
-
-.testimonial-inner .pull-left{
-  border-right: 1px solid #e7e7e7;
-  padding-right: 15px;
-  position: relative;
-}
-
-.testimonial-inner .pull-left:after{
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 50%;
-  margin-top: -5px;
-  background: #FFF;
-  -webkit-transform: rotate(45deg);
-  border: 1px solid #e7e7e7;
-  right: -5px;
-  border-left: 0 none;
-  border-bottom: 0 none;
-}
-
-#partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-#partner {
-  color: #fff;
+.homeParagraphTitle{
   text-align: center;
 }
 
-#partner h2, 
-#partner h3 {
-  color: #fff;
+.homeParagraphBody{
+  line-height: 1.5em;
 }
-
-.partners ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.partners ul li{
-  display: inline-block;
-  float: left;
-  width: 20%;
-}
-
-#conatcat-info{
-  background: #fff url(../images/contact.png) no-repeat 90% 0;
-  padding: 30px 0;
-}
-
-.contact-info i{
-  width: 60px;
-  height: 60px;
-  font-size: 40px;
-  line-height: 60px;
-  color: #fff;
-  background: #000;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.contact-info h2{
-  margin-top: 0;
-  color: #000;
-}
-
-.contact-info{
-  color:#000;
-}
-
-
 
 
 /*************************
